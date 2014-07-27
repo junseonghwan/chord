@@ -14,6 +14,9 @@ eclipse {
 repositories {
   mavenCentral()
   jcenter()
+  maven {
+    url "http://www.stat.ubc.ca/~bouchard/maven/"
+  }
 }
 
 dependencies {
@@ -22,6 +25,8 @@ dependencies {
   compile group: 'junit', name: 'junit', version: '4.11'
   compile group: 'com.beust', name: 'jcommander', version: '1.30'
   compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.2.1'
+  compile group: 'org.apache.commons', name: 'commons-exec', version: '1.2'
+  compile group: 'ca.ubc.stat', name: 'briefj', version: '2.3.3'
 }
 
 apply plugin: 'versions'
